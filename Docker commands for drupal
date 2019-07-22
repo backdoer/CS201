@@ -1,0 +1,7 @@
+docker run --name drupal-mysql -e MYSQL_ROOT_PASSWORD=root -d mysql
+
+docker run --name drupal-project -p 8080:80 --link drupal-mysql:mysql -d drupal:7
+
+docker inspect drupal-mysql | grep IPAddress
+
+(use this IP address as the db location w/ port 3306; db name: mysql)

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<link rel="stylesheet" type="text/css" href='checkpoint.css'>
+<script src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
+
+<script src="checkpoint.js"></script>
+</head>
+
+<body>
+	<div>Select workbook sheets: 
+		<a onClick="switchView('Checkpoint')">Dashboard</a> 
+		<a onClick="switchView('Map')">Map</a> 
+		<a onClick="switchView('Categories')">Categories</a> 
+		<a onClick="switchView('Discounts by Qty')">Cluster</a> 
+	</div>
+	<div>Filter by region: 
+		<a onClick="addValuesToFilter('ALL')">All regions </a>
+		<a onClick="addValuesToFilter('United Kingdom')">United Kingdom </a>
+		<a onClick="addValuesToFilter('United States')">United States </a>
+	</div>
+	<div>Select marks: 
+		<a onClick="addValuesToClusterFilter('Cluster 1')">Cluster 1</a>
+		<a onClick="addValuesToClusterFilter('Cluster 2')">Cluster 2</a>
+		<a onClick="addValuesToClusterFilter('Cluster 3')">Cluster 3</a>
+	</div>
+	<div id="tableauViz"></div><div id="markDetails"></div>
+	
+
+</body>
+
+
+
+</html>
+

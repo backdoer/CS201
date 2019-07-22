@@ -1,0 +1,28 @@
+a {
+	background-color: #99b3ff;
+	color: black;
+	padding: 5px;
+	border: solid;
+	border-color: blue;
+	border-style: groove;
+	border-width: 1px;
+	border-radius: 5px;
+	margin: 1px;
+
+}
+
+a:hover{
+	cursor: pointer;
+}
+
+div {
+	margin: 5px;
+}
+
+#tableauViz {
+	float: left;
+}
+
+#markDetails {
+	float:right;
+}
